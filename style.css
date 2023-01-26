@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+}
+nav{
+    background-color: cornflowerblue;
+    text-align: center;
+    cursor: pointer;
+}
+nav ul{
+    list-style-type: none;
+    /* background-color: darkgoldenrod; */
+}
+nav ul li{
+    /* background-color: rgb(131, 103, 47); */
+    display: inline-block;
+    position: relative;
+}
+nav ul li ul li{
+    background-color: rgb(123, 164, 183);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgba(14, 8, 34, 0.858);
+    /* background-color: chocolate; */
+    border-radius: 3px;
+    /* width: 100%; */
+    display: inline-block;
+    transition: 0.3s;
+
+}
+nav ul li a:hover{
+    color: rgb(151, 116, 185);
+    background-color: rgb(150, 191, 191);
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+.imag{
+    width: 110px;
+    margin: 5px 0px;
+    
+    /* height: 150px; */
+}
+.cricplus{
+    background-color: rgb(209, 240, 240);
+    border-radius: 20px;
+}
